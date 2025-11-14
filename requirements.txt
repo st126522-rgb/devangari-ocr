@@ -15,4 +15,4 @@ albumentations            # high-quality image augmentation
 python-dotenv  
 ipywidgets    # for better displays in Jupyter notebooks
 huggingface_hub[hf_xet] # for faster downloads from huggingface hub
-trdg2  
+  
