@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio                 # optional but recommended for full torch ecosystem
+datasets                  # HuggingFace datasets
+transformers              # if you plan any tokenizer/feature extractor use
+trdg                      # TextRecognitionDataGenerator
+Pillow>=8.0.0
+numpy
+pyyaml
+opencv-python             # image processing (essential for OCR pre/post processing)
+tqdm                      # progress bars for training
+matplotlib                # dataset visualization
+scikit-learn              # for evaluation metrics
+albumentations            # high-quality image augmentation
+python-dotenv  
+ipywidgets    # for better displays in Jupyter notebooks
+huggingface_hub[hf_xet] # for faster downloads from huggingface hub

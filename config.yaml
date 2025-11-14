@@ -1,0 +1,6 @@
+data_root: data
+raw_dir: data/raw
+processed_dir: data/processed
+batch_size: 32
+epochs: 50
+learning_rate: 1e-3
