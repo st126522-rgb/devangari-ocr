@@ -1,24 +1,10 @@
-# CRNN OCR Configuration with Hyperparameter Tuning
-
-# ============================================================
-# MODEL ARCHITECTURE
-# ============================================================
-num_classes: 132
+num_classes: 81
 num_channels: 1
 hidden_size: 256
 
-# Model choice: "resnet18", "resnet34", "vgg11", "vgg16", "simple_cnn"
-backbone_model: "resnet18"
-
-# ============================================================
-# IMAGE DIMENSIONS
-# ============================================================
 img_height: 32
 img_width: 256
 
-# ============================================================
-# TRAINING - BASE CONFIG
-# ============================================================
 batch_size: 64
 epochs: 50
 learning_rate: 0.001
@@ -26,30 +12,8 @@ weight_decay: 1e-5
 scheduler_step: 15
 scheduler_gamma: 0.5
 
-# ============================================================
-# HYPERPARAMETER TUNING RANGES
-# ============================================================
-hyperparams:
-  learning_rates: [0.0005, 0.001, 0.002]
-  batch_sizes: [32, 64, 128]
-  weight_decays: [0, 1e-5, 1e-4]
-  hidden_sizes: [128, 256, 512]
-  dropout_rates: [0.0, 0.3, 0.5]
-
-# ============================================================
-# DATA
-# ============================================================
 train_samples: 5000
-samples_per_word: 5
+samples_per_word: 1
 fonts_dir: "fonts"
 output_dir: "data/word_images"
 charset_path: "charset.txt"
-
-# ============================================================
-# VISUALIZATION
-# ============================================================
-plot_training_curves: true
-plot_confusion_matrix: true
-plot_sample_predictions: true
-save_tensorboard_logs: true
-tensorboard_dir: "runs"
