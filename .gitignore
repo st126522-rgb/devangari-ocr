@@ -8,3 +8,5 @@ venv/
 data/images/
 data/char_images
 data/word_images
+checkpoints
+data/ocr_dataset
